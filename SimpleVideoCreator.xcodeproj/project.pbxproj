@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		020F6E9B21FD56FE003C84D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020F6E9A21FD56FE003C84D1 /* AppDelegate.swift */; };
-		020F6E9D21FD56FE003C84D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020F6E9C21FD56FE003C84D1 /* ViewController.swift */; };
-		020F6EA021FD56FE003C84D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 020F6E9E21FD56FE003C84D1 /* Main.storyboard */; };
 		020F6EA221FD56FF003C84D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 020F6EA121FD56FF003C84D1 /* Assets.xcassets */; };
 		020F6EA521FD56FF003C84D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 020F6EA321FD56FF003C84D1 /* LaunchScreen.storyboard */; };
-		020F6EB021FD5700003C84D1 /* SimpleVideoCreatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020F6EAF21FD5700003C84D1 /* SimpleVideoCreatorTests.swift */; };
-		020F6EBB21FD5700003C84D1 /* SimpleVideoCreatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020F6EBA21FD5700003C84D1 /* SimpleVideoCreatorUITests.swift */; };
+		020F6ED021FD6078003C84D1 /* CreateVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020F6ECF21FD6078003C84D1 /* CreateVideoViewController.swift */; };
+		020F6ED221FD6086003C84D1 /* CreateVideoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 020F6ED121FD6086003C84D1 /* CreateVideoViewController.storyboard */; };
+		020F6ED421FD6123003C84D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 020F6ED321FD6123003C84D1 /* GoogleService-Info.plist */; };
+		020F6ED621FD6A71003C84D1 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020F6ED521FD6A71003C84D1 /* Video.swift */; };
+		020F6EE321FD7795003C84D1 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020F6EE221FD7795003C84D1 /* VideoHelper.swift */; };
+		020F6EE621FD7F50003C84D1 /* ViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020F6EE521FD7F50003C84D1 /* ViewController+Alert.swift */; };
+		020F6EEB21FDC244003C84D1 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020F6EEA21FDC244003C84D1 /* FirestoreService.swift */; };
+		020F6EED21FDD069003C84D1 /* Encodable+toDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020F6EEC21FDD069003C84D1 /* Encodable+toDictionary.swift */; };
+		020F6EEF21FE32AA003C84D1 /* Snapshot+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020F6EEE21FE32AA003C84D1 /* Snapshot+decode.swift */; };
+		020F6EF121FE5DCA003C84D1 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020F6EF021FE5DCA003C84D1 /* VideoPlayerView.swift */; };
+		020F6EF421FEACC7003C84D1 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020F6EF321FEACC7003C84D1 /* Slider.swift */; };
+		020F6EF621FEC74F003C84D1 /* ViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020F6EF521FEC74F003C84D1 /* ViewController+Toast.swift */; };
+		020F6EF821FEE75E003C84D1 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020F6EF721FEE75E003C84D1 /* StorageService.swift */; };
+		4348280E9FDD801323CC8577 /* Pods_SimpleVideoCreator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5BE957B5ED2B2D04036040 /* Pods_SimpleVideoCreator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,17 +46,27 @@
 /* Begin PBXFileReference section */
 		020F6E9721FD56FE003C84D1 /* SimpleVideoCreator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleVideoCreator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		020F6E9A21FD56FE003C84D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		020F6E9C21FD56FE003C84D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		020F6E9F21FD56FE003C84D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		020F6EA121FD56FF003C84D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		020F6EA421FD56FF003C84D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		020F6EA621FD56FF003C84D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		020F6EAB21FD5700003C84D1 /* SimpleVideoCreatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleVideoCreatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		020F6EAF21FD5700003C84D1 /* SimpleVideoCreatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleVideoCreatorTests.swift; sourceTree = "<group>"; };
-		020F6EB121FD5700003C84D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		020F6EB621FD5700003C84D1 /* SimpleVideoCreatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleVideoCreatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		020F6EBA21FD5700003C84D1 /* SimpleVideoCreatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleVideoCreatorUITests.swift; sourceTree = "<group>"; };
-		020F6EBC21FD5700003C84D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		020F6ECF21FD6078003C84D1 /* CreateVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVideoViewController.swift; sourceTree = "<group>"; };
+		020F6ED121FD6086003C84D1 /* CreateVideoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateVideoViewController.storyboard; sourceTree = "<group>"; };
+		020F6ED321FD6123003C84D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		020F6ED521FD6A71003C84D1 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		020F6EE221FD7795003C84D1 /* VideoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
+		020F6EE521FD7F50003C84D1 /* ViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Alert.swift"; sourceTree = "<group>"; };
+		020F6EEA21FDC244003C84D1 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		020F6EEC21FDD069003C84D1 /* Encodable+toDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+toDictionary.swift"; sourceTree = "<group>"; };
+		020F6EEE21FE32AA003C84D1 /* Snapshot+decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Snapshot+decode.swift"; sourceTree = "<group>"; };
+		020F6EF021FE5DCA003C84D1 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		020F6EF321FEACC7003C84D1 /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		020F6EF521FEC74F003C84D1 /* ViewController+Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Toast.swift"; sourceTree = "<group>"; };
+		020F6EF721FEE75E003C84D1 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		1E34E3BAF1A0D49872D209A0 /* Pods-SimpleVideoCreator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleVideoCreator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleVideoCreator/Pods-SimpleVideoCreator.debug.xcconfig"; sourceTree = "<group>"; };
+		9092AC9E4DD651B19CCA1A4E /* Pods-SimpleVideoCreator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleVideoCreator.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleVideoCreator/Pods-SimpleVideoCreator.release.xcconfig"; sourceTree = "<group>"; };
+		CD5BE957B5ED2B2D04036040 /* Pods_SimpleVideoCreator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleVideoCreator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4348280E9FDD801323CC8577 /* Pods_SimpleVideoCreator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				020F6E9921FD56FE003C84D1 /* SimpleVideoCreator */,
-				020F6EAE21FD5700003C84D1 /* SimpleVideoCreatorTests */,
-				020F6EB921FD5700003C84D1 /* SimpleVideoCreatorUITests */,
 				020F6E9821FD56FE003C84D1 /* Products */,
+				A0C45AB4A2229C200BEA9DB9 /* Pods */,
+				DA8BDC91C0FD0DEF2031A5F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,32 +118,130 @@
 		020F6E9921FD56FE003C84D1 /* SimpleVideoCreator */ = {
 			isa = PBXGroup;
 			children = (
-				020F6E9A21FD56FE003C84D1 /* AppDelegate.swift */,
-				020F6E9C21FD56FE003C84D1 /* ViewController.swift */,
-				020F6E9E21FD56FE003C84D1 /* Main.storyboard */,
-				020F6EA121FD56FF003C84D1 /* Assets.xcassets */,
-				020F6EA321FD56FF003C84D1 /* LaunchScreen.storyboard */,
-				020F6EA621FD56FF003C84D1 /* Info.plist */,
+				020F6EC921FD5795003C84D1 /* Resources */,
+				020F6EC821FD578F003C84D1 /* Sources */,
+				020F6ECA21FD579A003C84D1 /* Supporting Files */,
 			);
 			path = SimpleVideoCreator;
 			sourceTree = "<group>";
 		};
-		020F6EAE21FD5700003C84D1 /* SimpleVideoCreatorTests */ = {
+		020F6EC821FD578F003C84D1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				020F6EAF21FD5700003C84D1 /* SimpleVideoCreatorTests.swift */,
-				020F6EB121FD5700003C84D1 /* Info.plist */,
+				020F6EDD21FD7211003C84D1 /* Entry */,
+				020F6EE721FDA598003C84D1 /* Views */,
+				020F6ECE21FD58CC003C84D1 /* Models */,
+				020F6ECB21FD58A3003C84D1 /* ViewControllers */,
+				020F6ECC21FD58A9003C84D1 /* Services */,
+				020F6ECD21FD58BA003C84D1 /* Helpers */,
+				020F6EF221FEAC6D003C84D1 /* ReusableUIs */,
+				020F6EE421FD7F3B003C84D1 /* Extensions */,
 			);
-			path = SimpleVideoCreatorTests;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		020F6EB921FD5700003C84D1 /* SimpleVideoCreatorUITests */ = {
+		020F6EC921FD5795003C84D1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				020F6EBA21FD5700003C84D1 /* SimpleVideoCreatorUITests.swift */,
-				020F6EBC21FD5700003C84D1 /* Info.plist */,
+				020F6EA121FD56FF003C84D1 /* Assets.xcassets */,
+				020F6EA321FD56FF003C84D1 /* LaunchScreen.storyboard */,
 			);
-			path = SimpleVideoCreatorUITests;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		020F6ECA21FD579A003C84D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				020F6ED321FD6123003C84D1 /* GoogleService-Info.plist */,
+				020F6EA621FD56FF003C84D1 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		020F6ECB21FD58A3003C84D1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				020F6ECF21FD6078003C84D1 /* CreateVideoViewController.swift */,
+				020F6ED121FD6086003C84D1 /* CreateVideoViewController.storyboard */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		020F6ECC21FD58A9003C84D1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				020F6EEA21FDC244003C84D1 /* FirestoreService.swift */,
+				020F6EF721FEE75E003C84D1 /* StorageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		020F6ECD21FD58BA003C84D1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				020F6EE221FD7795003C84D1 /* VideoHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		020F6ECE21FD58CC003C84D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				020F6ED521FD6A71003C84D1 /* Video.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		020F6EDD21FD7211003C84D1 /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				020F6E9A21FD56FE003C84D1 /* AppDelegate.swift */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		020F6EE421FD7F3B003C84D1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				020F6EF521FEC74F003C84D1 /* ViewController+Toast.swift */,
+				020F6EE521FD7F50003C84D1 /* ViewController+Alert.swift */,
+				020F6EEC21FDD069003C84D1 /* Encodable+toDictionary.swift */,
+				020F6EEE21FE32AA003C84D1 /* Snapshot+decode.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		020F6EE721FDA598003C84D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				020F6EF021FE5DCA003C84D1 /* VideoPlayerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		020F6EF221FEAC6D003C84D1 /* ReusableUIs */ = {
+			isa = PBXGroup;
+			children = (
+				020F6EF321FEACC7003C84D1 /* Slider.swift */,
+			);
+			path = ReusableUIs;
+			sourceTree = "<group>";
+		};
+		A0C45AB4A2229C200BEA9DB9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E34E3BAF1A0D49872D209A0 /* Pods-SimpleVideoCreator.debug.xcconfig */,
+				9092AC9E4DD651B19CCA1A4E /* Pods-SimpleVideoCreator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA8BDC91C0FD0DEF2031A5F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD5BE957B5ED2B2D04036040 /* Pods_SimpleVideoCreator.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,9 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 020F6EBF21FD5700003C84D1 /* Build configuration list for PBXNativeTarget "SimpleVideoCreator" */;
 			buildPhases = (
+				B5AA4993CD0A5AEF97E9E3D2 /* [CP] Check Pods Manifest.lock */,
 				020F6E9321FD56FE003C84D1 /* Sources */,
 				020F6E9421FD56FE003C84D1 /* Frameworks */,
 				020F6E9521FD56FE003C84D1 /* Resources */,
+				403E27361A9B08C7A7248F3C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,9 +350,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				020F6ED221FD6086003C84D1 /* CreateVideoViewController.storyboard in Resources */,
+				020F6ED421FD6123003C84D1 /* GoogleService-Info.plist in Resources */,
 				020F6EA521FD56FF003C84D1 /* LaunchScreen.storyboard in Resources */,
 				020F6EA221FD56FF003C84D1 /* Assets.xcassets in Resources */,
-				020F6EA021FD56FE003C84D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +373,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		403E27361A9B08C7A7248F3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SimpleVideoCreator/Pods-SimpleVideoCreator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleVideoCreator/Pods-SimpleVideoCreator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5AA4993CD0A5AEF97E9E3D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleVideoCreator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		020F6E9321FD56FE003C84D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				020F6E9D21FD56FE003C84D1 /* ViewController.swift in Sources */,
+				020F6EEF21FE32AA003C84D1 /* Snapshot+decode.swift in Sources */,
+				020F6EF821FEE75E003C84D1 /* StorageService.swift in Sources */,
 				020F6E9B21FD56FE003C84D1 /* AppDelegate.swift in Sources */,
+				020F6EEB21FDC244003C84D1 /* FirestoreService.swift in Sources */,
+				020F6EE321FD7795003C84D1 /* VideoHelper.swift in Sources */,
+				020F6EE621FD7F50003C84D1 /* ViewController+Alert.swift in Sources */,
+				020F6ED621FD6A71003C84D1 /* Video.swift in Sources */,
+				020F6ED021FD6078003C84D1 /* CreateVideoViewController.swift in Sources */,
+				020F6EED21FDD069003C84D1 /* Encodable+toDictionary.swift in Sources */,
+				020F6EF621FEC74F003C84D1 /* ViewController+Toast.swift in Sources */,
+				020F6EF121FE5DCA003C84D1 /* VideoPlayerView.swift in Sources */,
+				020F6EF421FEACC7003C84D1 /* Slider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +458,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				020F6EB021FD5700003C84D1 /* SimpleVideoCreatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +465,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				020F6EBB21FD5700003C84D1 /* SimpleVideoCreatorUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +484,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		020F6E9E21FD56FE003C84D1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				020F6E9F21FD56FE003C84D1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		020F6EA321FD56FF003C84D1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -430,11 +613,12 @@
 		};
 		020F6EC021FD5700003C84D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E34E3BAF1A0D49872D209A0 /* Pods-SimpleVideoCreator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75AF4P3LCH;
-				INFOPLIST_FILE = SimpleVideoCreator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SimpleVideoCreator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,11 +632,12 @@
 		};
 		020F6EC121FD5700003C84D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9092AC9E4DD651B19CCA1A4E /* Pods-SimpleVideoCreator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75AF4P3LCH;
-				INFOPLIST_FILE = SimpleVideoCreator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SimpleVideoCreator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
